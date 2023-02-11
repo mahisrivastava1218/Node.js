@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hello profile</title>
+</head>
+<body>
+
+    <!-- <h1>YOU are Looking For Opportunity</h1>/////// -->
+    <h1>HELLO USER <%= data.name %></h1>
+    <h1>LLO USER <%= data.batch %></h1>
+    <h1>hello user<%=data.percentage %></h1>
+    <!-- now you can access header file n profile file -->
+    <%- include('common/header'); %>   
+
+    <ul>
+        <% data.skills.forEach((items)=>{ %>
+           <li> <%= items %></li>
+        <% })%>
+    </ul>
+</body>
+</html>
